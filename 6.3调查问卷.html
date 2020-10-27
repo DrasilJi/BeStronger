@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form>
+        您的性别?<br>
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        您的健身频率?（一周）<br>
+        <input type="radio" name="frequency" value="0">0次<br>
+        <input type="radio" name="frequency" value="1-3">1-3次<br>
+        <input type="radio" name="frequency" value="4-7">4-7次<br>
+        您的健身方式？<br>
+        <input type="radio" name="way" value="gym">健身房（撸铁）<br>
+        <input type="radio" name="way" value="indoor">室内运动（Hiit、瑜伽）<br>
+        <input type="radio" name="way" value="outdoor">室外运动（篮球、足球等）<br>
+    </form>
+    <form name="input" action="survey_action.php" method="get">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

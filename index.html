@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be Stronger</title>
+    <!-- 外联css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <style>
+        /* 线上字体 */
+     @font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_ui75esotmde.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_ui75esotmde.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_ui75esotmde.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_ui75esotmde.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_ui75esotmde.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_ui75esotmde.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+}
+        #title{
+            font-family: "webfont"!important;
+        }
+        /* 导航栏 */
+        #directory table,tr,td
+        {
+            border: 1px solid black;
+        }
+        #directory table
+        {
+            top: 5%;
+            width:100%;
+            background-color:#EEEEE2;
+            position: fixed;
+        }
+        #directory td
+        {
+            height: 100px;
+            width: 25%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Be Stronger</h1>
+    <!-- 表单 -->
+    <form name="login" action="./survey_action.php" method="POST">
+        Id: <input type="text" name="Id" placeholder="请输入你的ID"><br>
+        Password: <input type="text" name="Password" placeholder="请输入你的密码"><br>
+        <input type="submit" value="提交表单"/><br>
+    </form>
+    <!-- 导航栏 -->
+    <div id="directory">
+        <table>
+        <tr>
+            <td><a href="#preface">前言</a></td>
+            <td><a href="#chest">健身动作</a></td>
+            <td><a href="#survey">关于健身习惯的一个小调查</a></td>
+            <td><a href="#bottom">关于我</a></td>
+        </tr>
+        </table>
+    </div>
+    
+    <!-- <div id="directory">
+        <h1>目录</h1>
+        <ul>
+            <li><a href="#preface">前言</a></li>
+            <li><a href="#chest">胸</a></li>
+            <li><a href="#shoulder">肩</a></li>
+            <li><a href="#back">背</a></li>
+            <li><a href="#arm">手臂</a></li>
+            <li><a href="#leg">腿</a></li>
+            <li><a href="#survey">关于健身习惯的一个小调查</a></li>
+            <li><a href="#bottom">关于我</a></li>
+        </ul></div> -->
+    
+    
+        
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <div id="preface">
+        <p>这里是前言模块</p>
+    </div>
+    <div id="chest">
+        <p>这里是胸模块</p>
+    </div>
+    <div id="shoulder">
+        <p>这里是肩模块</p>
+    </div>
+    <div id="back">
+        <p>这里是背模块</p>
+    </div>
+    <div id="arm">
+        <p>这里是手臂模块</p>
+    </div>
+    <div id="leg">
+        <p>这里是腿模块</p>
+    </div>
+    <a id="survey" href="6.3调查问卷.html" title="调查问卷">健身小调查</a><br>
+    <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
+    <a id="bottom" href="4.5实训简历.html" title="关于我">关于我</a>
+    <iframe src="4.5实训简历.html" name="newsrc"></iframe>
+</body>
+</html>

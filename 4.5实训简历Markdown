@@ -1,0 +1,53 @@
+# 基本信息
++ 姓名：季书翔
++ 性别：男
++ 出生年月：2000年7月
++ 籍贯：浙江杭州
++ 政治面貌：入党积极分子
+
+# 自我介绍
+  季书翔，杭州电子科技大学卓越学院理工类实验班2018级学生。曾获校数学建模大赛校一等奖...
+
+姓名|性别|爱好
+--|:--:|--:
+季书翔|男|健身、游戏
+
+[MarkDown语法](https://www.jianshu.com/p/191d1e21f7ed)  
+
+```html
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>自我介绍</title>
+</head>
+<body>
+    <h1>基本信息</h1>
+    <ul>
+        <li>姓名：季书翔</li>
+        <li>性别：男</li>
+        <li>出生年月：2000年7月</li>
+        <li>籍贯：浙江杭州</li>
+        <li>政治面貌：入党积极分子</li>
+    </ul>
+    <h1>自我介绍</h1>
+    <p>
+        季书翔，杭州电子科技大学卓越学院理工类实验班2018级学生。曾获校数学建模大赛校一等奖...
+    </p>
+    <table border="1">
+        <tr>    
+            <td>row 1, cell 1</td>
+            <td>row 1, cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+        </tr>
+    </table>
+    <br>
+    <a href="https://www.jianshu.com/p/191d1e21f7ed">MarkDown基础语法</a>
+    <br>
+    <code>printf("hello world");</code>
+</body>
+</html>
+```
