@@ -23,6 +23,10 @@
             min-height: 100vh;
             flex-direction: column;
         }
+        .beStronger-body {
+        display: flex;
+        flex: 1;
+        }
         .beStronger-content {
             flex: 1;
         }
@@ -36,6 +40,7 @@
         .beStronger-nav {
             /* put the nav on the left */
             order: -1;
+            
         }
         #title{
             font-family: "webfont"!important;
@@ -62,6 +67,7 @@
     </style>
 </head>
 <body class="mybody">
+    <header>…</header>
     <div class="beStronger-body">
         <main class="beStronger-content">
             <h1 id="title">Be Stronger</h1>
@@ -109,8 +115,19 @@
         </main>
         <nav class="beStronger-nav">
             <h1>导航栏</h1>
+            <div>
+        <ul>
+            <li><a href="#preface">前言</a></li>
+            <li><a href="#chest">胸</a></li>
+            <li><a href="#shoulder">肩</a></li>
+            <li><a href="#back">背</a></li>
+            <li><a href="#arm">手臂</a></li>
+            <li><a href="#leg">腿</a></li>
+            <li><a href="#survey">关于健身习惯的一个小调查</a></li>
+            <li><a href="#bottom">关于我</a></li>
+        </ul></div>
         </nav>
-        <aside class="beStronger-ads">…</aside>
+        <aside class="beStronger-ads">右侧栏</aside>
     </div>
     
    
@@ -125,19 +142,8 @@
         </tr>
         </table>
     </div>
+    <footer>…</footer>
     
-    <!-- <div id="directory">
-        <h1>目录</h1>
-        <ul>
-            <li><a href="#preface">前言</a></li>
-            <li><a href="#chest">胸</a></li>
-            <li><a href="#shoulder">肩</a></li>
-            <li><a href="#back">背</a></li>
-            <li><a href="#arm">手臂</a></li>
-            <li><a href="#leg">腿</a></li>
-            <li><a href="#survey">关于健身习惯的一个小调查</a></li>
-            <li><a href="#bottom">关于我</a></li>
-        </ul></div> -->
     
     
         
