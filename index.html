@@ -6,6 +6,7 @@
     <title>Be Stronger</title>
     <!-- 外联css -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <style>
         /* 线上字体 */
      @font-face {
@@ -22,6 +23,11 @@
             display: flex;
             min-height: 100vh;
             flex-direction: column;
+            background-color: #fff;
+            background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+            background-size: 100% 1.2em;
         }
         .beStronger-body {
         display: flex;
@@ -45,8 +51,9 @@
         #title{
             font-family: "webfont"!important;
         }
+        
         /* 导航栏 */
-        #directory table,tr,td
+        /* #directory table,tr,td
         {
             border: 1px solid black;
         }
@@ -63,20 +70,21 @@
             height: 100px;
             width: 25%;
             text-align: center;
-        }
+        } */
     </style>
 </head>
 <body class="mybody">
-    <header>…</header>
+    <header>
+        <h1 id="title">Be Stronger</h1>
+        <!-- 表单 -->
+        <form name="login" action="./survey_action.php" method="POST">
+            Id: <input type="text" name="Id" placeholder="请输入你的ID"><br>
+            Password: <input type="text" name="Password" placeholder="请输入你的密码"><br>
+            <input type="submit" value="提交表单"/><br>
+        </form></header>
     <div class="beStronger-body">
         <main class="beStronger-content">
-            <h1 id="title">Be Stronger</h1>
-            <!-- 表单 -->
-            <form name="login" action="./survey_action.php" method="POST">
-                Id: <input type="text" name="Id" placeholder="请输入你的ID"><br>
-                Password: <input type="text" name="Password" placeholder="请输入你的密码"><br>
-                <input type="submit" value="提交表单"/><br>
-            </form>
+            
             <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
             <br>
             <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
@@ -115,7 +123,13 @@
         </main>
         <nav class="beStronger-nav">
             <h1>导航栏</h1>
-            <div>
+            <div class="list-group">
+                <a class="list-group-item" href="#preface"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 前言</a>
+                <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; 后台应用编辑</a>
+                <a class="list-group-item" href="#survey"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; 健身调查</a>
+                <a class="list-group-item" href="#bottom"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 关于我们</a>
+            </div>
+            <!-- <div>
         <ul>
             <li><a href="#preface">前言</a></li>
             <li><a href="#chest">胸</a></li>
@@ -125,14 +139,14 @@
             <li><a href="#leg">腿</a></li>
             <li><a href="#survey">关于健身习惯的一个小调查</a></li>
             <li><a href="#bottom">关于我</a></li>
-        </ul></div>
+        </ul></div> -->
         </nav>
         <aside class="beStronger-ads">右侧栏</aside>
     </div>
     
    
     <!-- 导航栏 -->
-    <div id="directory">
+    <!-- <div id="directory">
         <table>
         <tr>
             <td><a href="#preface">前言</a></td>
@@ -141,7 +155,7 @@
             <td><a href="#bottom">关于我</a></td>
         </tr>
         </table>
-    </div>
+    </div> -->
     <footer>…</footer>
     
     
