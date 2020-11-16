@@ -41,36 +41,42 @@
         .beStronger-ads {
             /* 12em is the width of the columns */
             flex: 0 0 12em;
+            text-align: center;
         }
 
         .beStronger-nav {
             /* put the nav on the left */
             order: -1;
-            
-        }
-        #title{
-            font-family: "webfont"!important;
+            line-height: 200%;
         }
         
-        /* 导航栏 */
-        /* #directory table,tr,td
-        {
-            border: 1px solid black;
+        #title{
+            font-family: "webfont"!important;
+            text-align:center;
         }
-        #directory table
-        {
-            top: 5%;
-            width:100%;
-            background-color:#EEEEE2;
-            position: fixed;
-            bottom: 10px;
-        }
-        #directory td
-        {
-            height: 100px;
-            width: 25%;
+        header{
             text-align: center;
-        } */
+        }
+        p:before
+        {
+        content:"Remember this";
+        background-color:black;
+        color:white;
+        font-weight:bold;
+        }
+        .action ul{
+            font-family: "Microsoft Yahei", Helvetica, Tahoma, "SimSun", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font-weight: normal;
+            vertical-align: baseline;
+            list-style: none outside none;
+            margin-right: -10px;
+        }
+        
     </style>
 </head>
 <body class="mybody">
@@ -80,82 +86,100 @@
         <form name="login" action="./survey_action.php" method="POST">
             Id: <input type="text" name="Id" placeholder="请输入你的ID"><br>
             Password: <input type="text" name="Password" placeholder="请输入你的密码"><br>
-            <input type="submit" value="提交表单"/><br>
-        </form></header>
+            <input type="submit" value="确定"/><br>
+        </form>
+    </header>
+    
     <div class="beStronger-body">
         <main class="beStronger-content">
             
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
             <div id="preface">
-                <p>这里是前言模块</p>
+                <br>
+                <p>这是一个普及健身知识的网站。健身其实离我们并不遥远。</p>
             </div>
-            <div id="chest">
-                <p>这里是胸模块</p>
+            <div id="gymAction">
+                <h1>锻炼动作</h1>
+                <ul>
+                <li>
+                <a href="chest.html">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/207d03694e404243840a1626a8ae036e.jpg" alt="">
+                </div>
+                <h2>胸肌</h2>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.hiyd.com/dongzuo/?muscle=8">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/ab5a20f663364685b4c79d67d14de4ac.jpg" alt="">
+                </div>
+                <h2>二头</h2>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.hiyd.com/dongzuo/?muscle=20">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/e5f8714b155c4a1a9af3f417dcf92c9a.jpg" alt="">
+                </div>
+                <h2>腹肌</h2>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.hiyd.com/dongzuo/?muscle=19">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/72ebe32ef2074f0fab4bcfea9d68921f.jpg" alt="">
+                </div>
+                <h2>肩部</h2>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.hiyd.com/dongzuo/?muscle=11">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/fcee0a0abae44ac7901caffd99d075df.jpg" alt="">
+                </div>
+                <h2>背部</h2>
+                </a>
+                </li>
+                <li>
+                <a href="https://www.hiyd.com/dongzuo/?muscle=16">
+                <div class="img-wrap">
+                <img src="http://static.ouj.com/hiyd_cms/template/3dfbfc7e0c1349caad24194cc8d83bb4.jpg" alt="">
+                </div>
+                <h2>小腿</h2>
+                </a>
+                </li>
+                </ul>
             </div>
-            <div id="shoulder">
-                <p>这里是肩模块</p>
-            </div>
-            <div id="back">
-                <p>这里是背模块</p>
-            </div>
-            <div id="arm">
-                <p>这里是手臂模块</p>
-            </div>
-            <div id="leg">
-                <p>这里是腿模块</p>
-            </div>
+            
             <a id="survey" href="6.3survey.html" title="调查问卷">健身小调查</a><br>
-            <img id="avator" src="头像.jpg" alt="avator" width="200" height="200">
-            <a id="bottom" href="4.5introduction.html" title="关于我">关于我</a>
-            <iframe src="4.5introduction.html" name="newsrc"></iframe>
+            
+            <a id="aboutme" href="4.5introduction.html" title="关于我">关于我</a>
+            <!-- <iframe src="4.5introduction.html" name="newsrc"></iframe> -->
         </main>
         <nav class="beStronger-nav">
-            <h1>导航栏</h1>
-            <div class="list-group">
-                <a class="list-group-item" href="#preface"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 前言</a>
-                <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; 后台应用编辑</a>
-                <a class="list-group-item" href="#survey"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; 健身调查</a>
-                <a class="list-group-item" href="#bottom"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 关于我们</a>
+            <div id="directory" style="position: fixed;">
+                <h1>导航栏</h1>
+                <div class="list-group">
+                    <a class="list-group-item" href="#preface"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 前言</a><br>
+                    <a class="list-group-item" href="#gymAction"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; 动作介绍</a><br>
+                    <a class="list-group-item" href="#survey"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; 健身调查</a><br>
+                    <a class="list-group-item" href="#aboutme"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; 关于我</a><br>
+                </div>
             </div>
-            <!-- <div>
-        <ul>
-            <li><a href="#preface">前言</a></li>
-            <li><a href="#chest">胸</a></li>
-            <li><a href="#shoulder">肩</a></li>
-            <li><a href="#back">背</a></li>
-            <li><a href="#arm">手臂</a></li>
-            <li><a href="#leg">腿</a></li>
-            <li><a href="#survey">关于健身习惯的一个小调查</a></li>
-            <li><a href="#bottom">关于我</a></li>
-        </ul></div> -->
+            
+            
         </nav>
-        <aside class="beStronger-ads">右侧栏</aside>
+        <aside class="beStronger-ads">
+            <div id="info" style="position: fixed;">
+                <img id="avator" src="img/头像.jpg" alt="avator" width="100" height="100"><br>
+                Drasil
+            </div>
+            
+        </aside>
     </div>
     
    
-    <!-- 导航栏 -->
-    <!-- <div id="directory">
-        <table>
-        <tr>
-            <td><a href="#preface">前言</a></td>
-            <td><a href="#chest">健身动作</a></td>
-            <td><a href="#survey">关于健身习惯的一个小调查</a></td>
-            <td><a href="#bottom">关于我</a></td>
-        </tr>
-        </table>
-    </div> -->
+    
     <footer>…</footer>
     
     
