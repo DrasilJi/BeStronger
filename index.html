@@ -76,6 +76,16 @@
             list-style: none outside none;
             margin-right: -10px;
         }
+        #gymAction{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #gymAction>div{
+            flex: 1;
+        }
+        
         
     </style>
 </head>
@@ -97,58 +107,48 @@
                 <br>
                 <p>这是一个普及健身知识的网站。健身其实离我们并不遥远。</p>
             </div>
+            <h1>锻炼动作</h1>
             <div id="gymAction">
-                <h1>锻炼动作</h1>
-                <ul>
-                <li>
-                <a href="chest.html">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/207d03694e404243840a1626a8ae036e.jpg" alt="">
+                <div id="chestHref">
+                    <a href="action.html#chest">
+                        <div class="img-wrap">
+                        <img src="http://static.ouj.com/hiyd_cms/template/207d03694e404243840a1626a8ae036e.jpg" alt="">
+                        </div>
+                        <h2>胸肌</h2>
+                        </a>
                 </div>
-                <h2>胸肌</h2>
-                </a>
-                </li>
-                <li>
-                <a href="https://www.hiyd.com/dongzuo/?muscle=8">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/ab5a20f663364685b4c79d67d14de4ac.jpg" alt="">
+               <div id="bicepsHref">
+                    <a href="https://www.hiyd.com/dongzuo/?muscle=8">
+                    <div class="img-wrap">
+                    <img src="http://static.ouj.com/hiyd_cms/template/ab5a20f663364685b4c79d67d14de4ac.jpg" alt="">
+                    </div>
+                    <h2>二头</h2>
+                    </a>
+               </div>
+               <div id="abdominalHref">
+                    <a href="https://www.hiyd.com/dongzuo/?muscle=20">
+                    <div class="img-wrap">
+                    <img src="http://static.ouj.com/hiyd_cms/template/e5f8714b155c4a1a9af3f417dcf92c9a.jpg" alt="">
+                    </div>
+                    <h2>腹肌</h2>
+                    </a>
                 </div>
-                <h2>二头</h2>
-                </a>
-                </li>
-                <li>
-                <a href="https://www.hiyd.com/dongzuo/?muscle=20">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/e5f8714b155c4a1a9af3f417dcf92c9a.jpg" alt="">
+                <div id="shoulderHref">
+                    <a href="https://www.hiyd.com/dongzuo/?muscle=19">
+                        <div class="img-wrap">
+                        <img src="http://static.ouj.com/hiyd_cms/template/72ebe32ef2074f0fab4bcfea9d68921f.jpg" alt="">
+                        </div>
+                        <h2>肩部</h2>
+                    </a>
                 </div>
-                <h2>腹肌</h2>
-                </a>
-                </li>
-                <li>
-                <a href="https://www.hiyd.com/dongzuo/?muscle=19">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/72ebe32ef2074f0fab4bcfea9d68921f.jpg" alt="">
+                <div id="backHref">
+                    <a href="https://www.hiyd.com/dongzuo/?muscle=11">
+                        <div class="img-wrap">
+                        <img src="http://static.ouj.com/hiyd_cms/template/fcee0a0abae44ac7901caffd99d075df.jpg" alt="">
+                        </div>
+                        <h2>背部</h2>
+                        </a>
                 </div>
-                <h2>肩部</h2>
-                </a>
-                </li>
-                <li>
-                <a href="https://www.hiyd.com/dongzuo/?muscle=11">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/fcee0a0abae44ac7901caffd99d075df.jpg" alt="">
-                </div>
-                <h2>背部</h2>
-                </a>
-                </li>
-                <li>
-                <a href="https://www.hiyd.com/dongzuo/?muscle=16">
-                <div class="img-wrap">
-                <img src="http://static.ouj.com/hiyd_cms/template/3dfbfc7e0c1349caad24194cc8d83bb4.jpg" alt="">
-                </div>
-                <h2>小腿</h2>
-                </a>
-                </li>
-                </ul>
             </div>
             
             <a id="survey" href="6.3survey.html" title="调查问卷">健身小调查</a><br>
